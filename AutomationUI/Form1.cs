@@ -22,7 +22,7 @@ namespace AutomationUI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            var request = WebRequest.Create("https://www.turkhackteam.org/images/turkhackteamtm/img/logo.png");
+            var request = WebRequest.Create("logo.png");
 
             using (var response = request.GetResponse())
             using (var stream = response.GetResponseStream())
@@ -30,7 +30,7 @@ namespace AutomationUI
                 thtBanner.Image = Bitmap.FromStream(stream);
             }
 
-            var request2 = WebRequest.Create("https://resmin.net/images/2021/04/09/istihbarat-ARGE-logo.png");
+            var request2 = WebRequest.Create("ARGE-logo.png");
 
             using (var response = request2.GetResponse())
             using (var stream = response.GetResponseStream())
